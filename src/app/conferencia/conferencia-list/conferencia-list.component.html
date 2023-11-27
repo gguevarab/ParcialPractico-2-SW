@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col mb-2" *ngFor="let conferencia of conferencias">
+        <div class="card p-2" style="width: 15rem; height: 10rem" (click)="onSelect(conferencia)">
+          <div class="card-body">
+            <h5 class="card-title">{{ conferencia.name }}</h5>
+              <p class="card-text">[{{ conferencia.id }}]</p>
+              <p class="card-text">[{{ conferencia.venue }}]</p>
+              <p class="card-text">[{{ conferencia.description }}]</p>
+          </div>
+       </div>
+      </div>
+  </div>
+</div>
